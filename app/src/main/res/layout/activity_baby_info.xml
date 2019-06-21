@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.ssong.themom.BabyInfoActivity"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+>
+    <LinearLayout
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_edge_gray"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:textAlignment="center"
+                android:text="아기 정보"
+                android:textSize="20dp"
+                android:textColor="#969796"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <ImageView
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/baby_sample"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+        <EditText
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_edge_gray_filled"
+                android:hint="태명"
+                android:textColorHint="#969796"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"/>
+        <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:textColorHint="@color/babyRedFont"
+                    android:background="@drawable/round_edge_red_filled"
+                    android:hint="여"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"/>
+            <EditText
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:textColorHint="@color/babyBlueFont"
+                    android:background="@drawable/round_edge_blue_filled"
+                    android:hint="남"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"/>
+         </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+<!--년도 -->
+            <Spinner
+                    android:background="@drawable/round_edge_gray_filled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></Spinner>
+            <!--월 -->
+            <Spinner
+                    android:background="@drawable/round_edge_gray_filled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></Spinner>
+            <!--일 -->
+            <Spinner
+                    android:background="@drawable/round_edge_gray_filled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></Spinner>
+        </LinearLayout>
+        <!--몸무게 -->
+        <Spinner
+                android:layout_gravity="right"
+                android:background="@drawable/round_edge_gray_filled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_margin="20dp"
+            android:background="@drawable/round_edge_gray"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:text="아이가 또 있어요!"
+                android:textSize="20dp"
+                android:textColor="#969796"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <ImageView
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_plus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+    <Button
+            android:layout_margin="20dp"
+            android:textSize="25dp"
+            android:textColor="#969796"
+            android:text="우리 아기에요"
+            android:background="@drawable/round_edge_gray_filled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

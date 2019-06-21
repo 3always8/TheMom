@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.ssong.themom.SigninEmailActivity"
+        android:layout_margin="20dp"
+>
+    <LinearLayout
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/round_edge_red_filled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:textAlignment="center"
+                android:text="이메일로 간단하게 가입하기"
+                android:textSize="20dp"
+                android:textColor="@color/babyRedFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_edge_white_filled"
+                android:textColorHint="@color/babyRed"
+                android:hint="이메일"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_edge_white_filled"
+                android:textColorHint="@color/babyRed"
+                android:hint="비밀번호"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_edge_white_filled"
+                android:textColorHint="@color/babyRed"
+                android:hint="비밀번호 확인"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_edge_white_filled"
+                android:textColorHint="@color/babyRed"
+                android:hint="별명"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/round_edge_red_filled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:textAlignment="center"
+                android:text="만 14세 이상이고 이용약관, 개인 정보취급방침, 마케팅사용 동의에 모두 동의합니다."
+                android:textSize="17dp"
+                android:textColor="@color/babyRedFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <LinearLayout
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_edge_white_filled"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/over14"
+                    android:textColor="@color/babyRedFont"
+                    android:text="만 14세 이상입니다"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <android.support.v7.widget.AppCompatCheckBox
+                    android:checked="true"
+                    android:labelFor="@+id/over14"
+                    android:textColor="@color/babyRed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:text="가입하기"
+            android:textColor="#969796"
+            android:background="@drawable/round_edge_gray_filled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
