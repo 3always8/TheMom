@@ -183,7 +183,7 @@
 
         </GridLayout>
         </ScrollView>
-        <android.support.v7.widget.AppCompatButton
+        <Button
                 android:layout_marginRight="20dp"
                 android:textSize="20dp"
                 android:layout_gravity="bottom|right"

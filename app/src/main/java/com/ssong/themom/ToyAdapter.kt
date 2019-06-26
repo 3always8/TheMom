@@ -1,9 +1,9 @@
 package com.ssong.themom
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 
 class ToyAdapter(val items : MutableList<Toy>, val context: Context)
     : RecyclerView.Adapter<ToyViewHolder>() {

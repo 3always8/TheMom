@@ -305,7 +305,7 @@
                     android:layout_height="wrap_content"/>
 
         </GridLayout>
-        <android.support.v7.widget.AppCompatButton
+        <Button
                 android:layout_margin="10dp"
                 android:background="@drawable/round_edge_gray_filled"
                 android:layout_gravity="right|bottom"

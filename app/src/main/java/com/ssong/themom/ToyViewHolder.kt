@@ -1,7 +1,7 @@
 package com.ssong.themom
 
-import android.support.v7.widget.RecyclerView
 import android.view.View
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item.view.*
 
 class ToyViewHolder(view: View) : RecyclerView.ViewHolder(view) {

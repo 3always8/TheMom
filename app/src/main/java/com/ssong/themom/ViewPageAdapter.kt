@@ -1,16 +1,16 @@
 package com.ssong.themom
 
 
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentPagerAdapter
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
 
 class ViewPageAdapter internal constructor (fm: FragmentManager) : FragmentPagerAdapter(fm) {
     private val COUNT = 5
     public var currentFragment : Fragment? = null
 
-    override fun getItem(p0: Int): Fragment? {
+    override fun getItem(p0: Int): Fragment {
         var fragment: Fragment? = null
         when (p0){
             0 -> fragment = HomeFragment()
@@ -20,7 +20,7 @@ class ViewPageAdapter internal constructor (fm: FragmentManager) : FragmentPager
             4 -> fragment = MypageFragment()
 
         }
-        return fragment
+        return fragment!!
     }
 
     override fun getCount(): Int {

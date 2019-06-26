@@ -1,23 +1,22 @@
 package com.ssong.themom
 
 import android.os.Bundle
-import android.support.design.widget.TabLayout
-import android.support.v4.view.ViewPager
-import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.ImageView
-import android.widget.Toast
-import com.google.firebase.database.FirebaseDatabase
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentActivity
+import androidx.viewpager.widget.ViewPager
+import com.google.android.material.tabs.TabLayout
+import com.google.firebase.firestore.FirebaseFirestore
 
 class MainActivity : AppCompatActivity() {
-
 
     var toyDB: ToyDB? = null
     var toyList = mutableListOf<Toy>()
     var viewPager: ViewPager? = null
     var tabLayoutIconArray = arrayOf(R.drawable.icon_home, R.drawable.icon_search,R.drawable.icon_plus, R.drawable.icon_rank, R.drawable.icon_mypage)
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,7 +53,6 @@ class MainActivity : AppCompatActivity() {
         tabLayout.postDelayed(r, 1000)
 
 
-
         toyDB = ToyDB.getInstance(this)
         val r_db = Runnable{
             addToDB(
@@ -76,11 +74,27 @@ class MainActivity : AppCompatActivity() {
             }
 */
 
-
         }
         val thread = Thread(r_db)
         thread.start()
         //Recyclerview Setting
+
+        val db = FirebaseFirestore.getInstance()
+
+        db.collection("itemCollectionId")
+            .whereEqualTo("name", "name1")
+            .get()
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    for (document in task.result!!) {
+                        val nameValue = document.getString("name")
+                        Log.d("TAG", document.id + " >>>=== " + nameValue)
+                    }
+                } else {
+                    Log.d("TAG", "Error getting documents: ", task.exception)
+                }
+            }
+
 
     }
 
@@ -115,7 +129,6 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
 
     fun addToDB(id : Int,
                 name : String,

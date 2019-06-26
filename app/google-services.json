@@ -8,20 +8,12 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:541172659858:android:2956672b5625db96",
+        "mobilesdk_app_id": "1:541172659858:android:633aa1d5e4501732",
         "android_client_info": {
-          "package_name": "com.ssong.framestudy"
+          "package_name": "com.ssong.themom"
         }
       },
       "oauth_client": [
-        {
-          "client_id": "541172659858-cjmngsf18g2adotoartmpnb55p7i5drv.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.ssong.framestudy",
-            "certificate_hash": "398881250ba92ee1176cc60f01b05ca9c4a74d8c"
-          }
-        },
         {
           "client_id": "541172659858-df01gl8m1ajuc03444gbtajgrl4bl223.apps.googleusercontent.com",
           "client_type": 3
